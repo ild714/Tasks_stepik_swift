@@ -1,40 +1,15 @@
 //
 //  NoteExtension.swift
-//  
+//
 //
 //  Created by Ильдар Нигметзянов on 06/07/2019.
 //
 
 import UIKit
 
-enum  importance : String {
-    case  serious = "serious"
-    case  general = "general"
-    case  so_so = "so-so"
-}
-
-struct Note {
-    let uid: String
-    let title: String
-    let content: String
-    let color: UIColor
-    let important: importance
-    let date_destruction : Date? //объявляем var для необязательного ввода Date
-    
-    init (uid:String = UUID().uuidString, title: String, content : String , color : UIColor = UIColor.white,important:importance,date_destruction: Date?  ){
-        self.uid = uid
-        self.title = title
-        self.content = content
-        self.color = color
-        self.important=important
-        self.date_destruction = date_destruction
-        
-    }
-}
-
 
 extension Note {
-    var json : [String:Any]{
+    var jsonMap : [String:Any]{
         get {
             var jsonMap = [String:Any]()
             jsonMap["uid"] = self.uid
@@ -83,7 +58,7 @@ extension Note {
         }
         var importance0 : importance = .general
         if json["importance"] != nil {
-            guard let importanse1 = importance0 as? String else {
+            guard let importanse1 = json["importance0"] as? String else {
                 return nil
             }
             if let im = importance(rawValue: importanse1){

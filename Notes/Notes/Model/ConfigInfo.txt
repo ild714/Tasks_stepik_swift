@@ -1,0 +1,5 @@
+Задача 1 : поменять версию операционной системы на ios8
+Решение :  Заходим в конфигурацию проекта (Notes) -> Build settings -> Deployement -> ios8
+
+Задача 2 : настроить параметры компилятора для ускорения работы приложения
+Решение : Заходим в конфигурацию проекта (Notes) -> Build settings -> Aplle clang -> optimization level -> Fastest, Agressive Optimization

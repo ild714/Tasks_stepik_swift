@@ -45,7 +45,7 @@ class FileNotebook {
         guard let path =
             FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {return}
         
-        let json = notes.map {$0.json}
+        let json = notes.map {$0.jsonMap}
         
         do {
             let data = try JSONSerialization.data(withJSONObject: json, options: [])
@@ -61,9 +61,9 @@ class FileNotebook {
             FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {return}
         
         do {
-                let data = try Data(contentsOf: cashesUrl.appendingPathComponent("FileNotebook"))
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [[String: Any]]
-                notes = json.map {Note.parse(json: $0)}.compactMap{$0}
+            let data = try Data(contentsOf: cashesUrl.appendingPathComponent("FileNotebook"))
+            let json = try JSONSerialization.jsonObject(with: data, options: []) as! [[String: Any]]
+            notes = json.map {Note.parse(json: $0)}.compactMap{$0}
             
         } catch {
             print("Error With Loading FIle")
