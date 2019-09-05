@@ -106,8 +106,14 @@
       "scale" : "1x"
     },
     {
+<<<<<<< HEAD:Notes/Notes/Assets.xcassets/AppIcon-1.appiconset/Contents.json
       "idiom" : "mac",
       "size" : "512x512",
+=======
+      "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "ItunesArtwork@2x-1.png",
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004:Notes/Notes/Assets.xcassets/AppIcon.appiconset/Contents.json
       "scale" : "2x"
     }
   ],

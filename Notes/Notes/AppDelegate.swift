@@ -1,6 +1,7 @@
 //
 //  AppDelegate.swift
 //  Notes
+<<<<<<< HEAD
 //
 //  Created by Ильдар Нигметзянов on 03/08/2019.
 //  Copyright © 2019 Learning with Swift. All rights reserved.
@@ -64,5 +65,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+=======
+
+
+import UIKit
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let serverUrl = Bundle.main.object(forInfoDictionaryKey: "serverUrl") as? String
+        print(serverUrl ?? "")
+        
+        /*
+        var n = 100
+        
+        while true {
+            print (n)
+        }
+        */
+        return true
+    }
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004
 }
 

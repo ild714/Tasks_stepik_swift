@@ -2,12 +2,18 @@
 //  ViewController.swift
 //  Notes
 //
+<<<<<<< HEAD
 //  Created by Ильдар Нигметзянов on 03/08/2019.
 //  Copyright © 2019 Learning with Swift. All rights reserved.
+=======
+//  Created by Ильдар Нигметзянов on 06/07/2019.
+//  Copyright © 2019 Ильдар Нигметзянов. All rights reserved.
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004
 //
 
 import UIKit
 
+<<<<<<< HEAD
 class customColor {
     var custom : UIColor = UIColor.white
 }
@@ -193,5 +199,15 @@ class ViewController: UIViewController {
  
     }
     
+=======
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004
 }
 

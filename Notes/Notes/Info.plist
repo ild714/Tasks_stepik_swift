@@ -6,6 +6,13 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+<<<<<<< HEAD
+=======
+	<key>CFBundleIcons</key>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -14,8 +21,11 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+<<<<<<< HEAD
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+=======
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -41,5 +51,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+<<<<<<< HEAD
+=======
+	<key>serverUrl</key>
+	<string>$(ServerURL)</string>
+>>>>>>> 69fd8ccec4e1c781d6e1ca7922d84ac63d6da004
 </dict>
 </plist>
